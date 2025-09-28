@@ -1,7 +1,4 @@
 
-/* Reset y comportamiento base */
-html { scroll-behavior: smooth; }
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
 
 /* ---------- VARIABLES ---------- */
 :root{
@@ -11,127 +8,49 @@ html { scroll-behavior: smooth; }
   --text: #202020;
   --text-light: #272727;
   --card-bg: #ffffff;
-}
 
-/* ---------- BODY ---------- */
+}
 body{
+    margin: 0;
   background: var(--background);
   color: var(--text);
   padding-bottom: 90px;
   -webkit-overflow-scrolling: touch;
+  font-family: "Poppins", sans-serif; 
+  padding-top: 0;
+  margin-top: 0;
 }
 
-/* ---------- HEADER ---------- */
-header{
-  padding: 5% 1px 10% 15px;
-  background: var(--primary);
-  color: #fff;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-bottom: 19px;
-}
-.header{
-  display: flex;
-}
-.header h1{ 
-  color: #fff;
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
-  margin-top: 10%;
+h3{
+    color: var(--background);
+    background-color: var(--primary);
+    width: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 25px;
+    margin: 0;
+    border-radius: 0 0 10px 10px ;
+    margin-bottom: 20px;
 
-
+   
 }
-.header img{
-  width: 100px;
-
+.food-section{
+     padding:0 1rem;
 }
-header .highlight{ color: var(--card-bg); }
-
-/* ---------- BARRA DE BÚSQUEDA ---------- */
-.search-bar{
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  background: var(--card-bg);
-  border-radius: 25px;
-  padding: 0.5rem;
-  box-shadow: 0 4px 8px #0000001a;
-}
-.input-group{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  padding-left: 0.5rem;
-  color: var(--primary);
-}
-.input-group i{ width: 20px; height: 20px; margin-right: 0.5rem; }
-.search-bar input{
-  flex: 1;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1rem;
-  padding: 0;
-  color: var(--text);
-}
-.search-bar button{
-  background: var(--primary);
-  border: none;
-  padding: 0.6rem;
-  border-radius: 50%;
-  cursor: pointer;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ---------- CATEGORÍAS ---------- */
-.categories{
-  display: flex;
-  gap: 0.5rem;
-  overflow-x: auto;       /* se sigue moviendo horizontal */
-  scrollbar-width: none;  /* Firefox: oculta scrollbar */
-  -ms-overflow-style: none; /* IE/Edge antiguo */
-  padding-left: 1rem;
-}
-.categories::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-.categories button{
-  padding: 0.5rem 1.2rem;
-  border: none;
-  border-radius: 20px;
-  background: var(--card-bg);
-  cursor: pointer;
-  color: var(--text-light);
-  font-weight: bold;
-  margin-top: 20px
-}
-.categories button.active,
-.categories button:hover{
-  background: var(--primary);
-  color: #fff;
-  border: #fff 2px solid;
-}
-
-/* ---------- CARRUSEL ---------- */
-.food-section{ padding: 1rem; }
 .section-header{
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
   color: var(--text);
 }
+
 .section-header a{ color: var(--primary); text-decoration: none; font-weight: bold; }
 
 .food-carousel{
-  display: flex;
+  display: grid;
   gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  scrollbar-width: none;    
+  grid-template-columns: repeat(2,1fr );
+  align-items: stretch;
 }
 .food-carousel::-webkit-scrollbar{ display: none; }
 
@@ -146,20 +65,25 @@ header .highlight{ color: var(--card-bg); }
   scroll-snap-align: start;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-align: center;
+  margin: auto;
   margin-bottom: 15px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* ... estilos existentes ... */
   display: flex;
   flex-direction: column; 
+  
+  /* *** CLAVE: FIJAMOS LA ALTURA TOTAL DE CADA TARJETA *** */
+  height: 380px; 
 }
 
-.food-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
 
+
+/* Imagen */
 /* Imagen */
 .food-card img {
   width: 100%;
+  
+  /* *** CLAVE: ESTÁ FIJA EN 180PX *** */
   height: 180px;          
   object-fit: cover;
   border-radius: 14px;
@@ -177,6 +101,7 @@ header .highlight{ color: var(--card-bg); }
 }
 
 /* Descripción */
+/* Descripción */
 .food-card p {
   font-size: 0.9rem;
   color: #666;
@@ -184,6 +109,11 @@ header .highlight{ color: var(--card-bg); }
   flex-grow: 1;           
   min-height: 38px;   
 
+  /* *** CLAVE: NUEVAS PROPIEDADES PARA LIMITAR EL TEXTO *** */
+  overflow: hidden; /* Oculta el texto que desborda */
+  display: -webkit-box; /* Permite limitar a un número de líneas */
+  -webkit-line-clamp: 2; /* Limita el texto a 2 líneas */
+  -webkit-box-orient: vertical; /* Necesario para que line-clamp funcione */
 }
 
 /* Precio + botón */
@@ -214,8 +144,6 @@ header .highlight{ color: var(--card-bg); }
   transform: scale(1.1);
 }
 
-
-/* ---------- NAV INFERIOR ---------- */
 .bottom-nav{
   position: fixed;
   bottom: 0;

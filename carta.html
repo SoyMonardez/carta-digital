@@ -12,33 +12,41 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <!-- mantén lucide solo si lo usás para otros iconos -->
 <script src="https://unpkg.com/lucide@latest"></script>
+<link rel="icon" href="icono.png" type=".png">
 
 </head>
 <body>
   <!-- HEADER -->
 <header>
-    <h2>Don <span class="highlight">Alejo</span></h2>
-    <div class="search-bar">
-      <div class="input-group"> 
-          <i data-lucide="search"></i> 
-          <input type="text" placeholder="¿Qué tengo ganas de comer hoy...">
-      </div>
-      <button><i data-lucide="sliders"></i></button>
-    </div>
-  </header>
-<!---------boton de nav superior-------->
+  <section class="header">
+    
+    <h1>Don <span class="highlight">Alejo</span></h1>
+    <img src="/img/logo.png" alt="logo de un señor llamado Don Alejo con un sobrero y un vigote mostacho">
+  </section>
+  
+    <!---------boton de nav superior-------->
 <section class="categories">
-    <button class="active">todo</button>
-    <button>Pizza</button>
-    <button>Burger</button> <button>Sandwich</button>
+  <button class="active" data-filter="all">Todo</button>
+  <button data-filter="Pizza">Pizza</button>
+  <button data-filter="Burger">Burger</button>
+  <button data-filter="Sandwich">Sandwich</button>
+  <button data-filter="Desayunos">Desayunos</button>
+  <button data-filter="Vegano">Vegano</button>
+  <button data-filter="Bebidas">Bebidas</button>
+  <button data-filter="Infusiones">Infusiones</button>
+  <button data-filter="Postres">Postres</button>
+  <button data-filter="Helados">Helados</button>
 </section>
+  </header>
+
+
 <!---------CATEGORIA-------->
 <!---------POPULARES-------->
 
-<section class="food-section">
+<section class="food-section" data-category="Todo">
   <div class="section-header">
     <h3>Populares</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/popular.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -100,10 +108,10 @@
 
 <!---------desayunos-------->
 
-<section class="food-section">
+<section class="food-section" data-category="Desayunos">
   <div class="section-header">
     <h3>Desayunos</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/desayunos.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -169,10 +177,10 @@
 <!---------PIZZAS-------->
 
 
-<section class="food-section">
+<section class="food-section" data-category="Pizza">
   <div class="section-header">
     <h3>Pizza</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/pizza.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -244,10 +252,10 @@
 
 <!---------BURGER-------->
 
-<section class="food-section">
+<section class="food-section" data-category="Burger">
   <div class="section-header">
     <h3>Burger</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/burger.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -310,10 +318,10 @@
 
 <!---------SANDWICH-------->
 
-<section class="food-section">
+<section class="food-section" data-category="Sandwich">
   <div class="section-header">
     <h3>Sandwich</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/sandwich.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -375,10 +383,10 @@
 
 <!---------VEGANO-------->
 
-<section class="food-section">
+<section class="food-section" data-category="Vegano">
   <div class="section-header">
     <h3>Vegano</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/vegano.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -414,10 +422,10 @@
 
 <!---------BEBIDAS-------->
 
-<section class="food-section">
+<section class="food-section" data-category="Bebidas">
   <div class="section-header">
     <h3>Bebidas</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/bebida.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -498,10 +506,10 @@
 
 <!---------IFUSION-------->
 
-<section class="food-section">
+<section class="food-section" data-category="Infusiones">
   <div class="section-header">
     <h3>Infusiones</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/infusiones.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -583,10 +591,10 @@
 
 <!---------POSTRES-------->
 
-<section class="food-section">
+<section class="food-section" data-category="Postres">
   <div class="section-header">
     <h3>Postres</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/postres.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -658,10 +666,10 @@
 <!----heados-->
 
 
-<section class="food-section">
+<section class="food-section" data-category="Helados">
   <div class="section-header">
     <h3>Helados</h3>
-    <a href="#">Ver todo</a>
+    <a href="/html/helados.html">Ver todo</a>
   </div>
   <div class="food-carousel">
     <div class="food-card">
@@ -706,8 +714,8 @@
 
   <!-- NAV INFERIOR -->
 <nav class="bottom-nav">
-  <a href="#"><i data-lucide="home"></i></a>
-  <a href="#"><i data-lucide="heart"></i></a>
+  <a href="/carta.html"><i data-lucide="home"></i></a>
+  <a href="/html/popular.html"><i data-lucide="heart"></i></a>
   <a href="#"><i data-lucide="shopping-cart"></i></a>
 
   <div class="social-fab-container">
@@ -717,14 +725,14 @@
     </button>
 
     <!-- Redes sociales -->
-    <a href="https://wa.me/549XXXXXXXXX" class="fab-item" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/5492646296764" class="fab-item" target="_blank" aria-label="WhatsApp">
       <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
-    <a href="https://instagram.com/TUUSUARIO" class="fab-item" target="_blank" aria-label="Instagram">
+    <a href="https://instagram.com/samuelepez" class="fab-item" target="_blank" aria-label="Instagram">
       <i data-lucide="instagram"></i>
     </a>
-    <a href="https://facebook.com/TUUSUARIO" class="fab-item" target="_blank" aria-label="Facebook">
-      <i data-lucide="facebook"></i>
+    <a href="https://github.com/SoyMonardez/carta-digital" class="fab-item" target="_blank" aria-label="GitHub">
+      <i data-lucide="GitHub"></i>
     </a>
   </div>
 </nav>
