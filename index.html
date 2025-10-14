@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script> <!-- Iconos -->
+  <script src="https://unpkg.com/lucide@latest"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd4CjWzN0E9vS7hJjN5z1zQ8P3a2Lz7J1B31W4L3A7W8K1L9S9E2F7R4C4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- en <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- mantén lucide solo si lo usás para otros iconos -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="icon" href="icono.png" type=".png">
+
+</head>
+<body>
+  <!-- HEADER -->
+<header>
+  <section class="header">
+    
+    <h1>Don <span class="highlight">Alejo</span></h1>
+    <img src="/img/logo.png" alt="logo de un señor llamado Don Alejo con un sobrero y un vigote mostacho">
+  </section>
+  
+    <!---------boton de nav superior-------->
+<section class="categories">
+  <button class="active" data-filter="all">Todo</button>
+  <button data-filter="Pizza">Pizza</button>
+  <button data-filter="Burger">Burger</button>
+  <button data-filter="Sandwich">Sandwich</button>
+  <button data-filter="Desayunos">Desayunos</button>
+  <button data-filter="Vegano">Vegano</button>
+  <button data-filter="Bebidas">Bebidas</button>
+  <button data-filter="Infusiones">Infusiones</button>
+  <button data-filter="Postres">Postres</button>
+  <button data-filter="Helados">Helados</button>
+</section>
+  </header>
+
+
+<!---------CATEGORIA-------->
+<!---------POPULARES-------->
+
+<section class="food-section" data-category="Todo">
+  <div class="section-header">
+    <h3>Populares</h3>
+    <a href="/html/popular.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/desayuno infusion+homeled.jpg" alt="Desayuno Omelette">
+      <h4>Desayuno Omelette</h4>
+      <p>Infusión con omelette de vegetales.</p>
+      <div class="price-row">
+        <span>AR$ 9.800</span>
+        
+      </div>
+    </div>
+     <div class="food-card">
+      <img src="img/infusion + 2 tostadas.jpg" alt="Infusión con Tostadas">
+      <h4>Infusión + Tostadas</h4>
+      <p>Clásico desayuno argentino.</p>
+      <div class="price-row">
+        <span>AR$ 5.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/piza vegana.jpg" alt="Pizza Vegana">
+      <h4>Vegana</h4>
+      <p>Base crocante con vegetales frescos.</p>
+      <div class="price-row">
+        <span>AR$ 9.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/hamburguesa clasica + papas.jpg" alt="Hamburguesa con Papas">
+      <h4>Clásica con Papas</h4>
+      <p>Incluye papas fritas doradas.</p>
+      <div class="price-row">
+        <span>AR$ 10.200</span>
+        
+      </div>
+    </div>
+     <div class="food-card">
+      <img src="img/Croissant Sandwiches.jpg" alt="Croissant Sandwich">
+      <h4>Croissant Sandwich</h4>
+      <p>Relleno con jamón y queso fundido.</p>
+      <div class="price-row">
+        <span>AR$ 6.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/batido de chocolate.jpg" alt="Batido de Chocolate">
+      <h4>Chocolate</h4>
+      <p>Con leche y cacao puro.</p>
+      <div class="price-row">
+        <span>AR$ 6.200</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------desayunos-------->
+
+<section class="food-section" data-category="Desayunos">
+  <div class="section-header">
+    <h3>Desayunos</h3>
+    <a href="/html/desayunos.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/desayuno infusion + panqueque + huevo revuelto + bacon.jpg" alt="Desayuno Completo">
+      <h4>Desayuno Completo</h4>
+      <p>Infusión, panqueque, huevos revueltos y bacon.</p>
+      <div class="price-row">
+        <span>AR$ 11.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/desayuno infusion+homeled.jpg" alt="Desayuno Omelette">
+      <h4>Desayuno Omelette</h4>
+      <p>Infusión con omelette de vegetales.</p>
+      <div class="price-row">
+        <span>AR$ 9.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/desayuno tostada con huevio revuelto huevo frito y tosino + jugo de naranja y infusion.jpg" alt="Desayuno Especial">
+      <h4>Desayuno Especial</h4>
+      <p>Tostadas, huevo, jugo de naranja e infusión.</p>
+      <div class="price-row">
+        <span>AR$ 12.000</span>
+        
+      </div>
+    </div>
+     <div class="food-card">
+      <img src="img/infusion + 2 tostadas.jpg" alt="Infusión con Tostadas">
+      <h4>Infusión + Tostadas</h4>
+      <p>Clásico desayuno argentino.</p>
+      <div class="price-row">
+        <span>AR$ 5.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/infusion + croissant + mermelada.jpg" alt="Infusión Croissant">
+      <h4>Infusión + Croissant</h4>
+      <p>Acompañado con mermelada.</p>
+      <div class="price-row">
+        <span>AR$ 6.000</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/flan.jpg" alt="Flan">
+      <h4>Flan Casero</h4>
+      <p>Con dulce de leche y crema.</p>
+      <div class="price-row">
+        <span>AR$ 6.200</span>
+        
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!---------PIZZAS-------->
+
+
+<section class="food-section" data-category="Pizza">
+  <div class="section-header">
+    <h3>Pizza</h3>
+    <a href="/html/pizza.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/pizza-albahaca.jpg" alt="Pizza con albahaca">
+      <h4>Pizza con Albahaca</h4>
+      <p>Mozzarella fresca y hojas de albahaca.</p>
+      <div class="price-row">
+        <span>AR$ 10.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/pizza-peperoni.jpg" alt="Pizza Pepperoni">
+      <h4>Pepperoni</h4>
+      <p>Clásica con abundante pepperoni.</p>
+      <div class="price-row">
+        <span>AR$ 12.000</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/pizza.champiniones.jpg" alt="Pizza Champiñones">
+      <h4>Champiñones</h4>
+      <p>Queso mozzarella y champiñones frescos.</p>
+      <div class="price-row">
+        <span>AR$ 11.000</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/pizza.queaso.jpg" alt="Pizza 4 quesos">
+      <h4>Cuatro Quesos</h4>
+      <p>Mix de mozzarella, gorgonzola, parmesano y provolone.</p>
+      <div class="price-row">
+        <span>AR$ 13.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/pizza-peperoni-anegra.jpg" alt="Pizza Pepperoni Aceitunas Negras">
+      <h4>Pepperoni & Aceitunas</h4>
+      <p>Con aceitunas negras y salsa especial.</p>
+      <div class="price-row">
+        <span>AR$ 12.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/piza vegana.jpg" alt="Pizza Vegana">
+      <h4>Vegana</h4>
+      <p>Base crocante con vegetales frescos.</p>
+      <div class="price-row">
+        <span>AR$ 9.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/mini-pizzas.jpg" alt="Mini Pizzas">
+      <h4>Mini Pizzas</h4>
+      <p>Porción ideal para compartir.</p>
+      <div class="price-row">
+        <span>AR$ 7.500</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---------BURGER-------->
+
+<section class="food-section" data-category="Burger">
+  <div class="section-header">
+    <h3>Burger</h3>
+    <a href="/html/burger.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/Hamburguesa.jpg" alt="Hamburguesa Clásica">
+      <h4>Clásica</h4>
+      <p>Carne, lechuga, tomate y cheddar.</p>
+      <div class="price-row">
+        <span>AR$ 8.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/Hamburguesa con bacon.jpg" alt="Hamburguesa Bacon">
+      <h4>Bacon</h4>
+      <p>Carne doble y crujiente panceta.</p>
+      <div class="price-row">
+        <span>AR$ 9.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/hamburguesa clasica.jpg" alt="Hamburguesa Queso">
+      <h4>Queso</h4>
+      <p>Hamburguesa con doble cheddar.</p>
+      <div class="price-row">
+        <span>AR$ 8.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/hamburguesa clasica + papas.jpg" alt="Hamburguesa con Papas">
+      <h4>Clásica con Papas</h4>
+      <p>Incluye papas fritas doradas.</p>
+      <div class="price-row">
+        <span>AR$ 10.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/hamburguesa vegana.jpg" alt="Hamburguesa Vegana">
+      <h4>Vegana</h4>
+      <p>Con medallón de garbanzos.</p>
+      <div class="price-row">
+        <span>AR$ 8.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/Hamburguesa vegetariana con portobellos y frijoles.jpg" alt="Hamburguesa Vegetariana">
+      <h4>Vegetariana</h4>
+      <p>Con portobellos y frijoles negros.</p>
+      <div class="price-row">
+        <span>AR$ 9.000</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---------SANDWICH-------->
+
+<section class="food-section" data-category="Sandwich">
+  <div class="section-header">
+    <h3>Sandwich</h3>
+    <a href="/html/sandwich.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/Croissant Sandwiches.jpg" alt="Croissant Sandwich">
+      <h4>Croissant Sandwich</h4>
+      <p>Relleno con jamón y queso fundido.</p>
+      <div class="price-row">
+        <span>AR$ 6.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/croissant con palta huevo y tosino.jpg" alt="Croissant Palta">
+      <h4>Croissant Palta</h4>
+      <p>Con palta, huevo y panceta.</p>
+      <div class="price-row">
+        <span>AR$ 7.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/tostada con bacon y queso.jpg" alt="Tostada Bacon">
+      <h4>Tostada Bacon</h4>
+      <p>Tostada con queso y panceta.</p>
+      <div class="price-row">
+        <span>AR$ 5.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/tostada con palta y huevo encima.jpg" alt="Tostada Palta">
+      <h4>Tostada Palta</h4>
+      <p>Con palta y huevo poché.</p>
+      <div class="price-row">
+        <span>AR$ 6.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/tostada con queso tomate y acelga.jpg" alt="Tostada Vegetales">
+      <h4>Tostada Vegetales</h4>
+      <p>Con queso, tomate y acelga.</p>
+      <div class="price-row">
+        <span>AR$ 5.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/tostada de tomate y jamon cosido.jpg" alt="Tostada Jamón">
+      <h4>Tostada Jamón</h4>
+      <p>Tomate fresco y jamón cocido.</p>
+      <div class="price-row">
+        <span>AR$ 6.200</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------VEGANO-------->
+
+<section class="food-section" data-category="Vegano">
+  <div class="section-header">
+    <h3>Vegano</h3>
+    <a href="/html/vegano.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/El Mejor Pozole Verde Vegano (fácil, saludable y delicioso!).jpg" alt="Pozole Verde Vegano">
+      <h4>Pozole Verde Vegano</h4>
+      <p>Receta mexicana con maíz y vegetales.</p>
+      <div class="price-row">
+        <span>AR$ 9.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/Magical Green Falafel.jpg" alt="Falafel Verde">
+      <h4>Falafel Verde</h4>
+      <p>Bocados de garbanzos con especias.</p>
+      <div class="price-row">
+        <span>AR$ 8.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/ensalada.jpg" alt="Ensalada Fresca">
+      <h4>Ensalada Fresca</h4>
+      <p>Mix de verdes, tomate y aderezo casero.</p>
+      <div class="price-row">
+        <span>AR$ 7.800</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---------BEBIDAS-------->
+
+<section class="food-section" data-category="Bebidas">
+  <div class="section-header">
+    <h3>Bebidas</h3>
+    <a href="/html/bebida.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/jugo de naranja.jpg" alt="Jugo de Naranja">
+      <h4>Jugo de Naranja</h4>
+      <p>Exprimido natural recién hecho.</p>
+      <div class="price-row">
+        <span>AR$ 4.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/jugo de kiwi.jpg" alt="Jugo de Kiwi">
+      <h4>Jugo de Kiwi</h4>
+      <p>Refrescante y lleno de vitamina C.</p>
+      <div class="price-row">
+        <span>AR$ 5.000</span>
+         
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/jugo de sandia.jpg" alt="Jugo de Sandía">
+      <h4>Jugo de Sandía</h4>
+      <p>Dulce y refrescante.</p>
+      <div class="price-row">
+        <span>AR$ 4.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/jugo de limon con chia.jpg" alt="Jugo de Limón con Chía">
+      <h4>Limón con Chía</h4>
+      <p>Refrescante y nutritivo.</p>
+      <div class="price-row">
+        <span>AR$ 5.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/batido de banana.jpg" alt="Batido de Banana">
+      <h4>Batido de Banana</h4>
+      <p>Cremoso y natural.</p>
+      <div class="price-row">
+        <span>AR$ 5.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/batido de banana con cacao.jpg" alt="Batido Banana Cacao">
+      <h4>Banana con Cacao</h4>
+      <p>Con cacao amargo y banana.</p>
+      <div class="price-row">
+        <span>AR$ 6.000</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/batido de chocolate.jpg" alt="Batido de Chocolate">
+      <h4>Chocolate</h4>
+      <p>Con leche y cacao puro.</p>
+      <div class="price-row">
+        <span>AR$ 6.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/batido de frutilla.jpg" alt="Batido de Frutilla">
+      <h4>Frutilla</h4>
+      <p>Con frutillas frescas.</p>
+      <div class="price-row">
+        <span>AR$ 6.000</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---------IFUSION-------->
+
+<section class="food-section" data-category="Infusiones">
+  <div class="section-header">
+    <h3>Infusiones</h3>
+    <a href="/html/infusiones.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/cafe.jpg" alt="Café">
+      <h4>Café</h4>
+      <p>Clásico espresso intenso.</p>
+      <div class="price-row">
+        <span>AR$ 3.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/cafe con leche.jpg" alt="Café con Leche">
+      <h4>Café con Leche</h4>
+      <p>Suave y cremoso.</p>
+      <div class="price-row">
+        <span>AR$ 4.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/submarino.jpg" alt="Submarino">
+      <h4>Submarino</h4>
+      <p>Leche caliente con chocolate.</p>
+      <div class="price-row">
+        <span>AR$ 5.000</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/té.jpg" alt="Té">
+      <h4>Té</h4>
+      <p>Infusión clásica de hierbas.</p>
+      <div class="price-row">
+        <span>AR$ 3.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/té de limon.jpg" alt="Té de Limón">
+      <h4>Té de Limón</h4>
+      <p>Refrescante y liviano.</p>
+      <div class="price-row">
+        <span>AR$ 3.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/té verde.jpg" alt="Té Verde">
+      <h4>Té Verde</h4>
+      <p>Rico en antioxidantes.</p>
+      <div class="price-row">
+        <span>AR$ 3.900</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/té de canela.jpg" alt="Té de Canela">
+      <h4>Té de Canela</h4>
+      <p>Aromático y cálido.</p>
+      <div class="price-row">
+        <span>AR$ 4.000</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/té negro.jpg" alt="Té Negro">
+      <h4>Té Negro</h4>
+      <p>Fuerte y energizante.</p>
+      <div class="price-row">
+        <span>AR$ 3.800</span>
+        
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+
+<!---------POSTRES-------->
+
+<section class="food-section" data-category="Postres">
+  <div class="section-header">
+    <h3>Postres</h3>
+    <a href="/html/postres.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/Cheesecake.jpg" alt="Cheesecake">
+      <h4>Cheesecake</h4>
+      <p>Suave pastel de queso.</p>
+      <div class="price-row">
+        <span>AR$ 7.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/Cheesecake con frutilla.jpg" alt="Cheesecake Frutilla">
+      <h4>Cheesecake Frutilla</h4>
+      <p>Cubierto con mermelada casera.</p>
+      <div class="price-row">
+        <span>AR$ 7.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/flan.jpg" alt="Flan">
+      <h4>Flan Casero</h4>
+      <p>Con dulce de leche y crema.</p>
+      <div class="price-row">
+        <span>AR$ 6.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/lemon pie.jpg" alt="Lemon Pie">
+      <h4>Lemon Pie</h4>
+      <p>Base crocante con crema de limón.</p>
+      <div class="price-row">
+        <span>AR$ 6.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/torta de chocolate.jpg" alt="Torta Chocolate">
+      <h4>Torta de Chocolate</h4>
+      <p>Bizcocho húmedo con cacao intenso.</p>
+      <div class="price-row">
+        <span>AR$ 7.000</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/panqueque.jpg" alt="Panqueque">
+      <h4>Panqueque</h4>
+      <p>Con dulce de leche argentino.</p>
+      <div class="price-row">
+        <span>AR$ 5.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/granola con frutos de temporada.jpg" alt="Granola">
+      <h4>Granola</h4>
+      <p>Con frutos de estación.</p>
+      <div class="price-row">
+        <span>AR$ 6.500</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!----heados-->
+
+
+<section class="food-section" data-category="Helados">
+  <div class="section-header">
+    <h3>Helados</h3>
+    <a href="/html/helados.html">Ver todo</a>
+  </div>
+  <div class="food-carousel">
+    <div class="food-card">
+      <img src="img/helado de chocolate.jpg" alt="Helado Chocolate">
+      <h4>Chocolate</h4>
+      <p>Helado cremoso de cacao puro.</p>
+      <div class="price-row">
+        <span>AR$ 6.800</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/helado de frutilla.jpg" alt="Helado Frutilla">
+      <h4>Frutilla</h4>
+      <p>Helado con frutillas frescas.</p>
+      <div class="price-row">
+        <span>AR$ 6.500</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/helado de oreo.jpg" alt="Helado Oreo">
+      <h4>Oreo</h4>
+      <p>Con trozos de galleta.</p>
+      <div class="price-row">
+        <span>AR$ 7.200</span>
+        
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="img/helado de pistacho.jpg" alt="Helado Pistacho">
+      <h4>Pistacho</h4>
+      <p>Helado artesanal de pistacho.</p>
+      <div class="price-row">
+        <span>AR$ 7.500</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- NAV INFERIOR -->
+<nav class="bottom-nav">
+  <a class="active" href="/carta.html"><i data-lucide="home"></i></a>
+  <a href="/html/popular.html"><i data-lucide="heart"></i></a>
+
+
+  <div class="social-fab-container">
+    <!-- Botón toggle -->
+    <button class="social-fab-toggle" aria-label="Más redes">
+      <i data-lucide="plus"></i>
+    </button>
+
+    <!-- Redes sociales -->
+    <a href="https://wa.me/5492646296764" class="fab-item" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a href="https://instagram.com/samuelepez" class="fab-item" target="_blank" aria-label="Instagram">
+      <i data-lucide="instagram"></i>
+    </a>
+    <a href="https://github.com/SoyMonardez/carta-digital" class="fab-item" target="_blank" aria-label="GitHub">
+      <i data-lucide="GitHub"></i>
+    </a>
+  </div>
+</nav>
+
+
+<script src="js/carta.js"></script>
+<script>
+  lucide.createIcons(); 
+</script>
+
+</body>
+</html>
